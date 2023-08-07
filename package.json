@@ -1,7 +1,8 @@
 {
   "name": "lit-server-components",
   "workspaces": [
-    "./components/*"
+    "./components/*",
+    "./lit-async/"
   ],
   "scripts": {
     "postinstall": "npm run patch",
