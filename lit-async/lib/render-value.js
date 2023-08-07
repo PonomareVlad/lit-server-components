@@ -364,6 +364,8 @@ export function* renderValue(value, renderInfo) {
             for (const item of value) {
                 yield* renderValue(item, renderInfo);
             }
+        } else if (value instanceof Promise) {
+            yield value;
         } else {
             yield escapeHtml(String(value));
         }
@@ -550,4 +552,3 @@ function* renderAttributePart(instance, op, value) {
 }
 
 const getLast = (a) => a[a.length - 1];
-//# sourceMappingURL=render-value.js.map
