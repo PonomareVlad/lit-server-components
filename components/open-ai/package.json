@@ -1,0 +1,7 @@
+{
+  "name": "open-ai",
+  "main": "index.mjs",
+  "dependencies": {
+    "lit": "^2.7.6"
+  }
+}
