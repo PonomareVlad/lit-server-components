@@ -1,7 +1,7 @@
+import OpenAI from "openai";
 import {
     createCompletionsHandler
-} from "open-ai/server.mjs";
-import OpenAI from "openai";
+} from "open-ai/api.mjs";
 
 const {OPENAI_API_KEY: apiKey} = process.env;
 

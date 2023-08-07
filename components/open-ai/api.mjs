@@ -1,8 +1,9 @@
 import {OpenAIStream, StreamingTextResponse} from "ai";
 
-export function createCompletion(openai, options = {}) {
+export async function createCompletion(openai, options = {}) {
     const {messages = [], stream = false, model = "gpt-3.5-turbo", ...other} = options;
-    return openai.chat.completions.create({model, stream, messages, ...other});
+    const response = await openai.chat.completions.create({model, stream, messages, ...other});
+    return stream ? response : response?.choices?.pop()?.message?.content;
 }
 
 export function createCompletionsHandler(openai, options = {}) {

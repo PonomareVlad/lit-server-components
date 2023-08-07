@@ -1,7 +1,15 @@
 {
   "name": "open-ai",
   "main": "index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./component.mjs": {
+      "edge-light": "./component.server.mjs",
+      "default": "./component.mjs"
+    }
+  },
   "dependencies": {
+    "@lit-labs/task": "^3.0.0",
     "ai": "^2.1.32",
     "lit": "^2.7.6",
     "openai": "^4.0.0-beta.8"

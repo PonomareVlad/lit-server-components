@@ -1,3 +1,3 @@
-import {OpenAI} from "./component.mjs";
+import {OpenAI} from "open-ai/component.mjs";
 
 OpenAI.define();

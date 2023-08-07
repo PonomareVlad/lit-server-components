@@ -365,7 +365,7 @@ export function* renderValue(value, renderInfo) {
                 yield* renderValue(item, renderInfo);
             }
         } else if (value instanceof Promise) {
-            yield value;
+            yield value.then(value => renderValue(value, renderInfo));
         } else {
             yield escapeHtml(String(value));
         }
