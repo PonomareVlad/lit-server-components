@@ -5,7 +5,7 @@
     ".": "./index.mjs",
     "./component.mjs": {
       "edge-light": "./component.server.mjs",
-      "default": "./component.mjs"
+      "default": "./component.client.mjs"
     }
   },
   "dependencies": {

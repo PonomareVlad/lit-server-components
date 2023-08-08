@@ -1,5 +1,5 @@
 import {createCompletion} from "./api.mjs";
-import {OpenAI as OpenAIComponent} from "./component.mjs";
+import {OpenAI as OpenAIComponent} from "./component.client.mjs";
 
 export class OpenAI extends OpenAIComponent {
 
