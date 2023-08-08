@@ -1,0 +1,13 @@
+{
+  "name": "lit-page",
+  "main": "index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./context.mjs": "./context.mjs",
+    "./component.mjs": "./component.mjs"
+  },
+  "dependencies": {
+    "@lit-labs/context": "^0.3.3",
+    "lit": "^2.7.6"
+  }
+}

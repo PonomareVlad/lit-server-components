@@ -1,8 +1,12 @@
 import {Task} from "@lit-labs/task";
 import {html, LitElement} from "lit";
+import {pageContext} from "lit-page/context.mjs";
+import {ContextConsumer} from "@lit-labs/context";
 import {unsafeHTML} from "lit/directives/unsafe-html.js";
 
 export class OpenAI extends LitElement {
+
+    _page = new ContextConsumer(this, pageContext);
 
     static tag = "open-ai"
 

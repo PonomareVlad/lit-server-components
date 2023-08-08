@@ -9,6 +9,7 @@
     }
   },
   "dependencies": {
+    "@lit-labs/context": "^0.3.3",
     "@lit-labs/task": "^3.0.0",
     "ai": "^2.1.32",
     "lit": "^2.7.6",
