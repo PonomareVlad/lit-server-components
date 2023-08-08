@@ -3,7 +3,7 @@
  * Copyright 2019 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-import {ElementRenderer} from '@lit-labs/ssr/lib/element-renderer.js';
+import {ElementRenderer} from './element-renderer.js';
 import {ReactiveElement} from 'lit';
 import {_$LE} from 'lit-element/private-ssr-support.js';
 import {ariaMixinAttributes, HYDRATE_INTERNALS_ATTR_PREFIX,} from '@lit-labs/ssr-dom-shim';

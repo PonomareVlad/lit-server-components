@@ -21,7 +21,7 @@ const {
     isIterable,
 } = _$LH;
 import {digestForTemplateResult} from '@lit-labs/ssr-client';
-import {getElementRenderer,} from '@lit-labs/ssr/lib/element-renderer.js';
+import {getElementRenderer,} from './element-renderer.js';
 import {escapeHtml} from '@lit-labs/ssr/lib/util/escape-html.js';
 import {parseFragment} from 'parse5';
 import {isElementNode, isCommentNode, traverse} from '@parse5/tools';
